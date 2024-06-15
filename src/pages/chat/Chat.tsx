@@ -171,7 +171,7 @@ const Chat = () => {
                     {!lastQuestionRef.current ? (
                         <div className={styles.chatEmptyState}>
                             <SparkleFilled fontSize={"120px"} primaryFill={"rgba(115, 118, 225, 1)"} aria-hidden="true" aria-label="Chat logo" />
-                            <h1 className={styles.chatEmptyStateTitle}>Chat with your data</h1>
+                            <h1 className={styles.chatEmptyStateTitle}>AI/ML Jobs Guru</h1>
                             <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
                             <ExampleList onExampleClicked={onExampleClicked} useGPT4V={useGPT4V} />
                         </div>
@@ -238,7 +238,7 @@ const Chat = () => {
                     <div className={styles.chatInput}>
                         <QuestionInput
                             clearOnSend
-                            placeholder="Type a new question (e.g. what is product FR-R92B-58?)"
+                            placeholder="Type a new question (e.g. What skills are required for AI marketting?)"
                             disabled={isLoading}
                             onSend={question => makeApiRequest(question)}
                         />
